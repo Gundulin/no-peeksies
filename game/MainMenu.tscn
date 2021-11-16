@@ -1,0 +1,48 @@
+[gd_scene format=2]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MainMenuWindow" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 120
+custom_constants/margin_top = 80
+custom_constants/margin_left = 120
+custom_constants/margin_bottom = 80
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMenuWindow"]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 1246.0
+margin_bottom = 688.0
+
+[node name="MainMenuButtons" type="VBoxContainer" parent="MainMenuWindow/HBoxContainer"]
+margin_right = 1122.0
+margin_bottom = 608.0
+size_flags_horizontal = 3
+
+[node name="Play" type="Label" parent="MainMenuWindow/HBoxContainer/MainMenuButtons"]
+margin_right = 1122.0
+margin_bottom = 14.0
+text = "Play"
+
+[node name="Settings" type="Label" parent="MainMenuWindow/HBoxContainer/MainMenuButtons"]
+margin_top = 18.0
+margin_right = 1122.0
+margin_bottom = 32.0
+text = "Settings"
+
+[node name="Quit" type="Label" parent="MainMenuWindow/HBoxContainer/MainMenuButtons"]
+margin_top = 36.0
+margin_right = 1122.0
+margin_bottom = 67.0
+text = "Quit
+"
+
+[node name="NextMenuButtons" type="VBoxContainer" parent="MainMenuWindow/HBoxContainer"]
+margin_left = 1126.0
+margin_right = 1126.0
+margin_bottom = 608.0
+
